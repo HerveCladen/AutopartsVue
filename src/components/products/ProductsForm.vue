@@ -1,5 +1,6 @@
 <template>
-  <div v-if="productToEdit">
+  <div v-if="productToEdit" class="container">
+    <h1 class="title">Détail de produit</h1>
     <div class="field">
       <label class="label">Code</label>
       <div class="control">
@@ -17,6 +18,11 @@
       <div class="control">
         <input class="input" type="text" v-model="productToEdit.unitPrice">
       </div>
+    </div>
+    <div>
+      <router-link class="button is-primary" :to="{ name: 'products-list' }">
+        Retour
+      </router-link>
     </div>
   </div>
 </template>
@@ -40,3 +46,9 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+  .field {
+    max-width: 600px;
+    margin: auto;
+  }
+</style>

@@ -18,6 +18,11 @@
         <input class="input" type="text" v-model="supplierToEdit.contact">
       </div>
     </div>
+    <div>
+      <router-link class="button is-primary" :to="{ name: 'suppliers-list' }">
+        Retour
+      </router-link>
+    </div>
   </div>
 </template>
 

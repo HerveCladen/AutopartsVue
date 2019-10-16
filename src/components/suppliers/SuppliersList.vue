@@ -19,7 +19,7 @@
             {{ supplier.telephone }}
           </td>
           <td>
-            {{ supplier.contact }} $
+            {{ supplier.contact }}
           </td>
           <td>
             <router-link
