@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import AppNavigation from "./components/Navigation";
+import AppNavigation from './components/Navigation.vue';
 
 export default {
-  components: { AppNavigation }
-}
+  components: { AppNavigation },
+};
 </script>
 
 <style lang="scss">

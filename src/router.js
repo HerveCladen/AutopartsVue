@@ -4,6 +4,7 @@ import Home from './views/Home.vue';
 import ProductsList from './components/products/ProductsList.vue';
 import SuppliersList from './components/suppliers/SuppliersList.vue';
 import ProductEdit from './components/products/ProductsForm.vue';
+import SupplierEdit from './components/suppliers/SuppliersForm.vue';
 
 Vue.use(Router);
 
@@ -18,8 +19,8 @@ export default new Router({
     },
     {
       path: '/products/list',
-      component: ProductsList,
       name: 'products-list',
+      component: ProductsList,
     },
     {
       path: '/products/edit/:id',
@@ -28,9 +29,15 @@ export default new Router({
       props: true,
     },
     {
-      path: '/suppliers',
+      path: '/suppliers/list',
       name: 'suppliers-list',
       component: SuppliersList,
+    },
+    {
+      path: '/suppliers/edit/:id',
+      name: 'supplier-edit',
+      component: SupplierEdit,
+      props: true,
     },
   ],
 });

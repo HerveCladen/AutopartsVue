@@ -1,8 +1,15 @@
 <template>
   <div>
-    <h1>Ceci est la liste des produits</h1>
-
+    <h1 class="title">Liste des produits</h1>
     <table class="table">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Titre</th>
+          <th>Prix</th>
+          <th></th>
+        </tr>
+      </thead>
       <tbody>
         <tr v-for="product in products" v-bind:key="product.id">
           <td>
@@ -41,3 +48,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  table {
+    margin: 25px auto;
+  }
+</style>

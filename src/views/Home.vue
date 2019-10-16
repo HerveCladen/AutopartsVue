@@ -1,5 +1,5 @@
 <template>
   <div class="home">
-    <p>Welcome to Autoparts</p>
+    <h1 class="title">Bienvenue à Autoparts</h1>
   </div>
 </template>
